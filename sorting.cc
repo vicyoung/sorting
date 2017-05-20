@@ -11,7 +11,7 @@ void heapsort(uint32_t *m_array, const size_t m_size) {
     /* Implement your code. */
 	uint32_t heap[m_size+1];
 	for(size_t i = 0;i < m_size;i++) {
-		heap[i+1] = m_array[i];
+		heap[i+1] = *(m_array+i);
 		size_t j = i+1;
 		while(heap[j]<heap[j/2]&&j!=1){
 			uint32_t tmp = heap[j];
@@ -21,7 +21,7 @@ void heapsort(uint32_t *m_array, const size_t m_size) {
 		}
 	}
 	for(size_t i = 0;i < m_size;i++) {
-		m_array[i] = heap[1];
+		*(m_array+i) = heap[1];
 		size_t j = 1;
 		while(heap[2*j]!= 0){
 			if(heap[2*j] < heap[2*j+1]){
