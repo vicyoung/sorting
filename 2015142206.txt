@@ -1,0 +1,11 @@
+Sorting 1000000 numbers:
+Elapsed time = 252.796 msec
+array[2017] after sorting = 20147
+
+Heapsort done.
+
+Sorting 1000000 numbers:
+Elapsed time = 263.407 msec
+array[2017] after sorting = 20038
+
+Mergesort done.
