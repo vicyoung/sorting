@@ -36,10 +36,10 @@ int main(void) {
      * TEST YOUR CODE HERE TO SEE IF SORTING IS WORKING *
      ****************************************************/
     // Input array
-    uint32_t array[20] = { 9, 82, 51, 17, 23,
-                          67, 85, 91, 76, 13,
-                          31, 37, 15, 94, 12,
-                          28, 79, 30, 63, 55};
+    uint32_t array[20] = { 9,76 , 51, 17, 23,
+                          79, 85,13, 76, 13,
+                          31, 9, 15, 94, 12,
+                          28, 79, 30, 55, 55};
     // Sort the input array
     sort(/* input array */ array, /* array size */ 20);
 

@@ -71,7 +71,7 @@ void mergesort(uint32_t *m_array, const size_t m_size) {
 void merge(uint32_t *m_array,uint32_t *a, uint32_t *b,size_t m_size) {
 	size_t i = 0, j = 0;
     for(size_t k = 0; k < m_size;k++) {
-		if(a[i] < b[j]){                        // Add the smaller one first.
+		if(a[i] <= b[j]){                        // Add the smaller one first.
 			m_array[k] = a[i];
 			i++;
 		}
